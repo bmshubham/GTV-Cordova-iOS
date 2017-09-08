@@ -1,0 +1,60 @@
+.has-error input{
+	border: 1px solid red;
+}
+
+.loader-show{
+	background: rgba(255,255,255,.5) url('../img/ajax-loader.gif') no-repeat center;
+	display: block !important;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.session-type h2{
+	margin-top: 10px;
+	text-align: left;
+}
+
+.session-type a
+{
+	position: relative;
+	display: block;
+    text-align: center;
+}
+.session-type a:before
+{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 4px solid #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transform: translateY( -50%);
+    top: 40%;
+    transition: all 0.5s ease;
+    background-color: rgb(114, 191, 68);
+    opacity: 0.4;
+}
+.session-type a:after
+{
+    content: "";
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    top: 40%;
+    display: inline-block;
+    text-align: center;
+    transform: translateY( -50%);
+    bottom: auto;
+    width: 10px;
+    height: 0px;
+    margin-left: -5px;
+}
+
+header{z-index: 9999;}

@@ -1,0 +1,9 @@
+video detail    ->     \VHX\Videos::retrieve("https://api.vhx.tv/videos/129903");
+
+Collection      ->     \VHX\Collections::retrieve("https://dev.vhx.tv/collections/".$userMaster->vhx_id)['_embedded']['collections'];
+
+
+customer product ->  \VHX\Customers::retrieve($userMaster->vhx_id)['_embedded']['products'];
+
+
+product videos 	->     \VHX\Videos::all(array('product' => $product['id']))['_embedded']['videos'];
