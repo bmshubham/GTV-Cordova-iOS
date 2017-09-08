@@ -1,2 +1,2 @@
-# GTV-iOS-Cordova
-GTV-iOS-Cordova
+# GTV-Cordova-iOS
+GTV-Cordova-iOS
